@@ -12,12 +12,105 @@
         <h1 id="logo">FilmTrack</h1>
         <p class="subtitle">Your Personal Movie Collection</p>
       </header>
-      <div class="movie-count">
+      <div class="stats-card">
         <div class="number-card label" id="totalMovies">11</div>
         <div class="number-card label" id="watchedCount">6</div>
         <div class="number-card label" id="watchingCount">2</div>
         <div class="number-card label" id="toWatchCount">3</div>
       </div>
+      <section class="filter-section">
+        <div class="filter-heading">
+          <h2 id="filter-title">Filter by Genre</h2>
+        </div>
+        <div class="filter-genres">
+          <div class="filter-pill">
+            <label for="animation" class="filter-label">Animation</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="animation"
+              value="animation"
+            />
+          </div>
+          <div class="filter-pill">
+            <label for="drama" class="filter-label">Drama</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="drama"
+              value="drama"
+            />
+          </div>
+          <div class="filter-pill">
+            <label for="sci-fi" class="filter-label">Sci-Fi</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="sci-fi"
+              value="sci-fi"
+            />
+          </div>
+          <div class="filter-pill">
+            <label for="family" class="filter-label">Family</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="family"
+              value="family"
+            />
+          </div>
+          <div class="filter-pill">
+            <label for="action" class="filter-label">Action</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="action"
+              value="action"
+            />
+          </div>
+          <div class="filter-pill">
+            <label for="musical" class="filter-label">Musical</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="musical"
+              value="musical"
+            />
+          </div>
+          <div class="filter-pill">
+            <label for="horror" class="filter-label">Horror</label>
+            <input
+              type="checkbox"
+              class="filter-input genre-filter"
+              id="horror"
+              value="horror"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="movies-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            Movies
+            <span class="movie-count" id="movieCount">Showing 12 movies</span>
+          </h2>
+        </div>
+        <div class="movie-grid" id="movieGrid">
+          <div class="movie-card">
+            <div class="movie-status watched"></div>
+            <div class="movie-poster">🤡</div>
+            <div class="movie-info">
+              <div>
+                <h3 class="movie-title">Interstellar</h3>
+                <div class="movie-meta">
+                  <span class="movie-year">2012</span>
+                  <span class="movie-genre">Horror</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="script.js"></script>
   </body>
